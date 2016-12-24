@@ -17,7 +17,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Role ID</th>
-            <th>Active</th>
+            <th>Status</th>
             <th>Created At</th>
             <th>Updated At</th>
         </tr>
