@@ -33,7 +33,7 @@
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->role_id}}</td>
-                    <td>{{$user->is_active ==1? 'Active' : 'No Active'}}</td>
+                    <td>{{$user->is_active ==1?'Active':'No Active'}}</td>
                     <td>{{$user->created_at->diffForHumans()}} </td>
                     <td>{{$user->updated_at->diffForHumans()}}</td>
                 </tr>
