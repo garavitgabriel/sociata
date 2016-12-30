@@ -99,6 +99,16 @@ class PostCommentsController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        Comment::findOrfail($id)->update($request->all());
+
+
+        return redirect()->back();
+
+
+
+
+
     }
 
     /**
@@ -110,5 +120,9 @@ class PostCommentsController extends Controller
     public function destroy($id)
     {
         //
+
+        Comment::findOrFail($id)->delete();
+
+        return redirect()->back();
     }
 }
