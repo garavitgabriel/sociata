@@ -6,6 +6,8 @@
 
 @section('content')
 
+
+    <h1>Create a Post</h1>
 <div class="row">
 
 

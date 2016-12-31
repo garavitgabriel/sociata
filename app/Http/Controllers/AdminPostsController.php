@@ -104,7 +104,7 @@ class AdminPostsController extends Controller
 
         $post = Post::findOrFail($id);
 
-        $categories = Category::lists('name', 'id')->all();
+        $categories = Category::all()->pluck('name', 'id')->all();
 
         return view('admin.posts.edit', compact('post', 'categories'));
     }

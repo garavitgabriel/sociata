@@ -15,12 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/logout', 'Auth\LoginController@logout');
+
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
 
 Route::get('/post/{id}', ['as'=>'home.post', 'uses'=>'AdminPostsController@post']);
+
+
+
+
 
 
 Route::group(['middleware'=>'admin'], function(){
